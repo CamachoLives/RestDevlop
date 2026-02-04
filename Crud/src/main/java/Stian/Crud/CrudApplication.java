@@ -33,22 +33,23 @@ public class CrudApplication {
 //        System.out.println("Tiempo de preparacion: " + Time);
 //        System.out.println("Dificultad: " + Dificultad);
 
-        var Random = new Random();
-        System.out.println("** Sistema de generador de ID **");
-
-        System.out.println("Cual es su Nombre?");
-        var name = consola.nextLine();
-
-        System.out.println("Cual es su Apellido?");
-        var lastname = consola.nextLine();
-
-        System.out.println("Cual es su ano de nacimiento?");
-        var year = consola.nextLine();
-
-        var ID = name.substring(0, 2).toUpperCase() + lastname.substring(0, 2).toUpperCase() + year.substring(2, 4).toUpperCase() + Random.nextInt(9999);
-
-
-        System.out.println(String.format("Hola, %s. \n Tu nuevo numero de identificacion (ID) generado por el sistema es : \n  %s ", name,ID));
+//        var Random = new Random();
+//        System.out.println("** Sistema de generador de ID **");
+//
+//        System.out.println("Cual es su Nombre?");
+//        var name = consola.nextLine();
+//
+//        System.out.println("Cual es su Apellido?");
+//        var lastname = consola.nextLine();
+//
+//        System.out.println("Cual es su ano de nacimiento?");
+//        var year = consola.nextLine();
+//
+//        var ID = name.substring(0, 2).toUpperCase() + lastname.substring(0, 2).toUpperCase() + year.substring(2, 4).toUpperCase() + Random.nextInt(9999);
+//
+//
+//        System.out.println(String.format("Hola, %s. \n Tu nuevo numero de identificacion (ID) generado por el sistema es : \n  %s ", name,ID));
+//
 
 
 
