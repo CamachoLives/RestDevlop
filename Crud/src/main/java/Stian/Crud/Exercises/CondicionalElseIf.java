@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class CondicionalElseIf {
     static void main() {
 //      Reto tienda en linea
+
         var Consola = new Scanner(System.in);
         System.out.println(" ** Tienda en linea ** ");
         
