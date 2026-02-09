@@ -30,23 +30,17 @@ public class SetenciaSwitch {
 //                break;
 //        }
 
-        int Month = 5;
+        int Month = 7;
 
-        switch(Month){
-            case 1 -> System.out.println("January");
-            case 2 -> System.out.println("February");
-            case 3 -> System.out.println("March");
-            case 4 -> System.out.println("April");
-            case 5 -> System.out.println("May");
-            case 6 -> System.out.println("June");
-            case 7 -> System.out.println("July");
-            case 8 -> System.out.println("August");
-            case 9 -> System.out.println("September");
-            case 10 -> System.out.println("October");
-            case 11 -> System.out.println("November");
-            case 12 -> System.out.println("December");
-            default -> System.out.println("Unknow Month");
-        }
+        var Station = switch(Month){
+            case 1, 2, 12 -> "Winter";
+            case 3, 4, 5 -> "Spring";
+            case 6, 7, 8 -> "Summer";
+            case 9, 10, 11 -> "Autumn";
+            default -> "Unknow Season";
+        };
+
+        System.out.println("The season --> " + Station);
 
 
     }
